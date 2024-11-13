@@ -3,9 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Found</title>
+    <title>Lostify - Full Screen Layout</title>
+    <link rel="stylesheet" href="../styles/found.css">
 </head>
 <body>
-    <h1>THIS IS FOR FOUND</h1>
+    <div class="container">
+        <header class="header">
+          <div class="logo">
+            <h1>LOSTIFY</h1>
+          </div>
+          <nav>
+            <ul>
+              <li>
+                <a href="../index.html">
+                  <img class="icon" src="../assets/home_icon.png" alt="Home" />
+                  <p class="icon-label">Home</p>
+                </a>
+              </li>
+              <li>
+                <a href="./works/lost.html">
+                  <img class="icon" src="../assets/lost_icon.png" alt="Lost" />
+                  <p class="icon-label">Lost</p>
+                </a>
+              </li>
+              <li>
+                <a href="./works/found.html">
+                  <img class="icon" src="../assets/found_icon.png" alt="Found" />
+                  <p class="icon-label">Found</p>
+                </a>
+              </li>
+              <li>
+                <a href="./works/about.html">
+                  <img class="icon" src="../assets/about_icon.png" alt="About" />
+                  <p class="icon-label">About</p>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <button class="join-button">Join us!</button>
+        </header>
+
+        <div class="content">
+            <aside class="sidebar">
+                <button class="filter-btn active">I've lost something</button>
+                <button class="filter-btn">I've found something</button>
+
+                <div class="filter-section">
+                    <h4>Keywords</h4>
+                    <input type="text" placeholder="Search..." class="filter-input">
+                    <div class="checkbox-group">
+                        <label><input type="checkbox"> Label 1</label>
+                        <label><input type="checkbox"> Label 2</label>
+                        <label><input type="checkbox"> Label 3</label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h4>Color</h4>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox"> Black</label>
+                        <label><input type="checkbox"> Blue</label>
+                        <label><input type="checkbox"> Red</label>
+                    </div>
+                </div>
+                
+                <div class="filter-section">
+                    <h4>Location</h4>
+                    <div class="checkbox-group">
+                        <label><input type="checkbox"> Taguig</label>
+                        <label><input type="checkbox"> Makati</label>
+                    </div>
+                </div>
+            </aside>
+
+            <main class="main-display">
+                <div class="search-bar">
+                    <input type="text" placeholder="Find your items here!" class="search-input">
+                   <button class="search-icon">🔍</button>
+                </div>
+
+                <div class="items-section">
+                    <h3>Today</h3>
+                    <div class="item-row">
+                        <div class="item-card"><img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/30/5519063/1.jpg?6115" alt="umbrella"></div>
+                        <div class="item-card"><img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/30/5519063/1.jpg?6115" alt="umbrella"></div>
+                        <div class="item-card"><img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/30/5519063/1.jpg?6115" alt="umbrella"></div>
+                    </div>
+                    
+                    <h3>Last 7 Days ago</h3>
+                    <div class="item-row">
+                        <div class="item-card"><img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/30/5519063/1.jpg?6115" alt="umbrella"></div>
+                        <div class="item-card"><img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/30/5519063/1.jpg?6115" alt="umbrella"></div>
+                        <div class="item-card"><img src="https://ng.jumia.is/unsafe/fit-in/500x500/filters:fill(white)/product/30/5519063/1.jpg?6115" alt="umbrella"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
 </body>
 </html>
