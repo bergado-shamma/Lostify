@@ -1,0 +1,150 @@
+:root {
+    --main-color: #150101;
+    --btn-color: #2c2c2c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+.container {
+    margin: 20px auto;
+    padding: 0 20px;
+    background: var(--main-color);
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: var(--main-color);
+    padding: 30px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-weight: 900;
+    text-decoration: none;
+    font-size: 2rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding-inline: 16px;
+}
+
+.join-btn {
+    background-color: var(--btn-color);
+    color: white;
+    border: 1px solid white;
+    padding:8px 24px;
+    border-radius: 16px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Main Content */
+.main-content {
+    background-color: #f0f1f5;
+    border-radius: 20px;
+    padding: 100px;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap:50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-text h1 {
+    font-size: 70px;       
+    margin-bottom: 20px;
+    font-weight: 900;         
+    color: var(--main-color);
+}
+
+.content-text p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.lost-btn {
+    background-color: var(--btn-color);
+    color: white;
+    padding: 16px 70px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    
+}
+
+.found-btn {
+    background-color: white;
+    color: var(--main-color);
+    border-radius: 8px;
+    border: 1px solid var(--btn-color);
+    cursor: pointer;
+    padding: 16px 70px;
+    font-size: 16px;
+}
+
+.content-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 80px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+    .main-content {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    .content-text h1 {
+        font-size: 3rem;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+    .logo {
+        font-size: 1.5rem;
+    }
+    .material-symbols-outlined.large {
+        font-size: 30px;
+        margin-inline: 0.5rem;
+    }
+    
+    .join-btn {
+        padding: 8px 40px;
+        border-radius: 30px;
+        font-size: 1rem;
+    }
+
+    .content-image {
+        order: -1;
+    }
+}

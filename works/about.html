@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+    <link rel="stylesheet" href="../styles/about.css"><title>Lostify</title>
+    
+    <script src="./assets/js/plugin/webfont/webfont.min.js"></script>
+    <script>
+      WebFont.load({
+        google: { families: ["Public Sans:300,400,500,600,700"] },
+        custom: {
+          families: [
+            "Font Awesome 5 Solid",
+            "Font Awesome 5 Regular",
+            "Font Awesome 5 Brands",
+            "simple-line-icons",
+          ],
+          urls: ["assets/css/fonts.min.css"],
+        },
+        active: function () {
+          sessionStorage.fonts = true;
+        },
+      });
+    </script>
 </head>
 <body>
-    <h1>THIS IS THE ABOUT</h1>
+    <nav class="navbar">
+        <a href="#" class="logo">LOSTIFY</a>
+        <div class="nav-links">
+            <a href="#"><i class="fas fa-home"></i></a>
+            <a href="#"><i class="fas fa-briefcase"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-info-circle"></i></a>
+        </div>
+        <button class="join-btn">Join us!</button>
+    </nav>
+
+    <div class="container">
+        <div class="main-content">
+            <div class="content-text">
+                <h1>About Lostify</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="buttons">
+                    <button class="lost-btn">I've lost something</button>
+                    <button class="found-btn">I've found something</button>
+                </div>
+            </div>
+            <div class="content-image">
+                <img src="../assets/image_1.jpg" alt="Workspace with keyboard and documents">
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
