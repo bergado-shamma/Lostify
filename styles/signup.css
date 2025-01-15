@@ -83,6 +83,16 @@ body {
     transform: translateX(-50%);
 }
 
+
+.join-text {
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+    font-size: 36px; 
+    color: #2c2c2c; 
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
 .welcome-text {
     font-size: 34px;
     font-weight: 600;
