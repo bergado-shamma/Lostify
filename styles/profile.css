@@ -1,0 +1,226 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #150101;
+    color: #2c2c2c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #1e0d0d;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.header .nav {
+    display: flex;
+    justify-content: center; /* Center the icons */
+    gap: 20px; /* Add space between the icons */
+    width: 100%; /* Ensure icons are centered */
+}
+
+.header .nav img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Add styling for the icons */
+.header .nav .icon {
+    width: 35px; /* Adjust size if necessary */
+    height: 35px;
+    border-radius: 50%;
+    background-color: #fff; /* Optional: Background color to make the icons stand out */
+    padding: 8px; /* Optional: Padding to make it more clickable */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect for style */
+}
+
+.header .nav img:last-child {
+    margin-left: auto; /* Align avatar to the right */
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 16px;
+    width: 85%;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 80px; /* Added margin to create space from the header */
+}
+
+/* Profile Wrapper Box */
+.profile-wrapper {
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 16px;
+    background-color: #fff;
+    margin-top: 30px; /* Create space between profile and top container */
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.profile h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.stats-wrapper {
+    display: flex;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.stats-wrapper div {
+    text-align: center;
+}
+
+.stats-wrapper div span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.form input::placeholder {
+    color: #888; /* Placeholder color */
+}
+
+.form button {
+    background-color: #333;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form button:hover {
+    background-color: #555;
+}
+
+.actions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 20px; /* Added gap to space out the buttons */
+}
+
+.actions button {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    width: 48%; /* Adjusted width for balance and spacing */
+}
+
+.actions button:hover {
+    background-color: #f0f0f0;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.spacer {
+    flex: 1;
+}
+
+.recent-activities {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.recent-activities h2 {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.recent-activities .activity {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.recent-activities .activity:last-child {
+    border-bottom: none;
+}
+
+.recent-activities a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.recent-activities a:hover {
+    text-decoration: underline;
+}
