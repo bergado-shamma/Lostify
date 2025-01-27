@@ -34,54 +34,43 @@ body {
 
 .header .nav {
     display: flex;
-    justify-content: center; /* Center the icons */
-    gap: 20px; /* Add space between the icons */
-    width: 100%; /* Ensure icons are centered */
+    justify-content: center; 
+    gap: 20px;            
+    width: 100%;           
+    position: relative;
 }
 
 .header .nav img {
-    width: 40px;
+    width: 40px;            
     height: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
 
-/* Add styling for the icons */
-.header .nav .icon {
-    width: 35px; /* Adjust size if necessary */
-    height: 35px;
-    border-radius: 50%;
-    background-color: #fff; /* Optional: Background color to make the icons stand out */
-    padding: 8px; /* Optional: Padding to make it more clickable */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional: Shadow effect for style */
-}
-
-.header .nav img:last-child {
-    margin-left: auto; /* Align avatar to the right */
+.header .nav img:last-child { 
+    position: absolute;
+    right: 20px;             
 }
 
 .container {
-    background-color: #fff;
+    background-color: #ddd;
+    ;
     border-radius: 16px;
-    width: 85%;
-    padding: 40px;
+    width: 200%;            
+    max-width: 1500px;      
+    padding: 20px;
     display: grid;
     grid-template-columns: 1.5fr 2fr;
     gap: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 80px; /* Added margin to create space from the header */
+    margin-top: 50px;      
 }
 
-/* Profile Wrapper Box */
 .profile-wrapper {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 16px;
     background-color: #fff;
-    margin-top: 30px; /* Create space between profile and top container */
 }
 
 .profile {
@@ -89,7 +78,6 @@ body {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    position: relative;
 }
 
 .profile img {
@@ -140,7 +128,7 @@ body {
 }
 
 .form input::placeholder {
-    color: #888; /* Placeholder color */
+    color: #888;
 }
 
 .form button {
@@ -163,22 +151,22 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    gap: 20px; /* Added gap to space out the buttons */
+    gap: 20px;
 }
 
 .actions button {
     padding: 10px 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #fff;
+    background-color: #333;
     cursor: pointer;
     font-size: 14px;
     transition: background-color 0.3s;
-    width: 48%; /* Adjusted width for balance and spacing */
+    width: 48%;
 }
 
 .actions button:hover {
-    background-color: #f0f0f0;
+    background-color: #fff;
 }
 
 .main-content {
@@ -224,3 +212,12 @@ body {
 .recent-activities a:hover {
     text-decoration: underline;
 }
+
+.box {
+    width: 850px; 
+    height: 250px; 
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    margin-top: 10px; 
+}
+
